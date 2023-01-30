@@ -18,3 +18,29 @@
 }
 
 /* Add your styles below here*/
+
+.container
+{
+  display: grid;
+  grid: auto-flow 200px / repeat(4,1fr);
+  gap: 0.5em;
+}
+
+.container > div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#eee;
+  text-align: center;
+  flex-direction: column;
+}
+.container [class*=bg] div
+{
+  background-color: rgb(20, 20, 20);
+}
+.container div:hover
+{
+  box-shadow: 10px 5px rgba(0, 0, 0, 0.459);
+  scale: 1.5;
+}
